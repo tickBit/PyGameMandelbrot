@@ -8,6 +8,5 @@ Please notice, that you can zoom the fractal with mouse.
 - nicer palette(s)
 - perhaps an UI
 
-Please notice, that the filled circle around the pointer is from the screen recorder software. :-)
+![myfractal](https://user-images.githubusercontent.com/61118857/183064135-c5e9ea4a-1efc-48e7-abae-e104dc26ee78.gif)
 
-![PyGameFractal](https://user-images.githubusercontent.com/61118857/182902255-95083892-d150-4076-9eac-e14b2da86f15.gif)
