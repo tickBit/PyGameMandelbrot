@@ -46,14 +46,14 @@ def mandel(c,maxiter):
     for iteration in range(maxiter):
         z=(z*z) + c
         if abs(z) > 4:
-            break
+            return iteration
         pass
 
-    return maxiter-iteration
+    return 0
 
 def draw_fractal(xvalues, yvalues, x1,y1,x2,y2):
 
-    maxiter = 80
+    maxiter = 42
 
     newX1 = xvalues[x1]
     newX2 = xvalues[x2]
@@ -77,7 +77,7 @@ def draw_fractal(xvalues, yvalues, x1,y1,x2,y2):
             cy = yvalues[y]
         
             c = complex(cx,cy)
-            fractal.set_at((sx,sy),(RGB(int(mandel(c,maxiter)/float(maxiter)*255), palette)))
+            fractal.set_at((sx,sy),(RGB(int(float(mandel(c,maxiter)*255.0)/float(maxiter)), palette)))
             sx = sx + 1
         sy = sy + 1
 

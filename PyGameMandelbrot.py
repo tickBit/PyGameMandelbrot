@@ -26,10 +26,10 @@ def mandel(c,maxiter):
         z=(z*z) + c
         
         if abs(z) > 4:
-            break
+            return iteration
         pass
 
-    return iteration
+    return 0
 
 def draw_fractal(xvalues, yvalues, x1,y1,x2,y2):
 
